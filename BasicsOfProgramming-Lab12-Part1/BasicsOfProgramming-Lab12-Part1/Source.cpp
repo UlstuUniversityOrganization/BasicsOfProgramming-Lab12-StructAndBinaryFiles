@@ -51,13 +51,6 @@ int main()
 	fwrite(&figuresCount, sizeof(int), 1, filePointer);
 	fwrite(inscription, sizeof(Inscription), figuresCount, filePointer);
 	fclose(filePointer);
-
-	//unsigned int inscriptionsCount = 0;
-	//fopen_s(&filePointer, "data.txt", "rb");
-	//fread(&inscriptionsCount, sizeof(int), 1, filePointer);
-	//Inscription* inscriptions = (Inscription*)malloc(sizeof(Inscription) * inscriptionsCount);
-	//fread(inscriptions, sizeof(Inscription), inscriptionsCount, filePointer);
-
 	fclose(filePointer);
 
 }
